@@ -13,7 +13,7 @@ An overly simple javascript file that wraps around Bootstrap 3's modals to be op
 
 ```html
 <!-- Include our popup js file -->
-<script src="/res/popup.js?v=1.0"></script>
+<script src="/popup.js?v=1.0"></script>
 
 <!-- Use the popup system -->
 <script>
