@@ -21,12 +21,14 @@ function popup(options) {
 
     var title = options.title || "Alert"
     var body = options.body || "options.body not defined"
-    var footer = PopupButtonOk.replace("@label", okLabel).replace("@id", okId)
+    var footer = ""
 
     if (type == "prompt")
         footer += PopupButtonCancel
             .replace("@label", cancelLabel)
             .replace("@id", cancelId)
+
+    footer += PopupButtonOk.replace("@label", okLabel).replace("@id", okId)
 
 
     $("body").append(PopupWrapper
@@ -42,4 +44,8 @@ function popup(options) {
         $("#" + cancelId).click(options.cancel)
 
     $("#" + id).modal()
+
+    $("#" + id).on("hidden.bs.modal", function (e) {
+        $(this).remove()
+    })
 }

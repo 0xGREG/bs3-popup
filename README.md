@@ -1,4 +1,4 @@
-# Popups v1.0 for Boostrap 3
+# Popups v1.1 for Boostrap 3
 
 ## About
 
@@ -13,7 +13,7 @@ An overly simple javascript file that wraps around Bootstrap 3's modals to be op
 
 ```html
 <!-- Include our popup js file -->
-<script src="/popup.js?v=1.0"></script>
+<script src="/popup.js?v=1.1"></script>
 
 <!-- Use the popup system -->
 <script>
